@@ -4,13 +4,26 @@
 	</div>
 
 	<div class='span5'>
-		<h1>
+		</h1>
 			Shaikh
 		</h1>
-		<p class='lead'>
+		</p class='lead'>
 			<i class='icon-gift'></i>
 			I love Canada
 		</p>
 	</div>
 </div>
 
+<div class='row'>
+	<div class='span8'>
+		<h4>
+			Give a coffee to Vince
+		</h4>
+		<%= form_for Gift.new do |f| %>
+		<%= f.text_field :from %>
+		<%= f.text_field :message %>
+		<%= f.submit "Give coffee" %>
+		<% end %>
+
+	</div>
+	</div>
